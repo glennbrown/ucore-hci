@@ -11,7 +11,7 @@ set -ouex pipefail
 
 # This installs a package from fedora repos
 # Homebrew Dependencies
-dnf group install -y 'Development Tools'
+dnf group install -y development-tools
 # Homebrew via ublue-os copr repo
 dnf copr enable -y ublue-os/packages
 dnf install -y ublue-brew
@@ -19,8 +19,8 @@ dnf copr disable -y ublue-os/packages
 #### Many of these packages do exist in brew but I think they make sense to install from Fedora
 # lm_sensors, smartmontools
 dnf install -y lm_sensors smartmontools
-# Note: git-core is installed by default just adding more tools
-dnf install -y git git-crypt
+# Git Extras
+dnf install -y git-crypt
 # Legacy tools, probaly don't need thme but nice to have
 dnf install -y ftp telnet rsh whois tftp
 # Compression tools
