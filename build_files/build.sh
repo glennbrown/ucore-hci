@@ -28,7 +28,7 @@ dnf install -y p7zip zip unzip
 # Disk tools (snapper is for being able to do snapraid-btrfs)
 dnf install -y bcachefs-tools sg3_utils hddtemp snapper nvme-cli
 # Intel GPU Tools and Drivers 
-dnf install -y igt-gpu-tools intel-media-driver-free libvdpau-va-gl intel-compute-runtime intel-gmmlib libva libva-utils glx-utils
+dnf install -y igt-gpu-tools intel-mediasdk libva-intel-media-driver libvdpau-va-gl intel-compute-runtime intel-gmmlib libva libva-utils glx-utils
 # Extra tools 
 dnf install -y busybox ipmitool just lsb_release redhat-lsb iotop-c pipx strace
 # zsh
