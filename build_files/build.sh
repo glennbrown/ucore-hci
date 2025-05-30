@@ -30,7 +30,7 @@ dnf install -y bcachefs-tools sg3_utils hddtemp snapper nvme-cli
 # Intel GPU Tools and Drivers 
 dnf install -y igt-gpu-tools intel-mediasdk libva-intel-media-driver libvdpau-va-gl intel-compute-runtime intel-gmmlib libva libva-utils glx-utils
 # Extra tools 
-dnf install -y busybox ipmitool just lsb_release redhat-lsb iotop-c pipx strace
+dnf install -y busybox ipmitool just redhat-lsb iotop-c pipx strace
 # zsh
 dnf install -y zsh
 # Use a COPR Example:
